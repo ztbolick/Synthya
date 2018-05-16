@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
   *
@@ -162,7 +160,7 @@ public class FrontEnd {
 
         ////////////////////////// Start Action Listener ///////////////////////////////
         // Low key Listener
-        KListenLow lowListen = new KListenLow();
+        KeyObserver.KListenLow lowListen = new KeyObserver.KListenLow();
         lowC.addActionListener(lowListen);
         lowCSharp.addActionListener(lowListen);
         lowD.addActionListener(lowListen);
@@ -177,7 +175,7 @@ public class FrontEnd {
         lowB.addActionListener(lowListen);
 
         // High key listener
-        KListenHigh highListen = new KListenHigh();
+        KeyObserver.KListenHigh highListen = new KeyObserver.KListenHigh();
         highC.addActionListener(highListen);
         highCSharp.addActionListener(highListen);
         highD.addActionListener(highListen);
@@ -258,70 +256,16 @@ public class FrontEnd {
         highB.setBounds(245,375,40,175);
         frontEnd.add(highB);
 
+
+        KeyObserver.setKeyListener(lowC);
+        KeyObserver.setKeyListener(lowD);
+        KeyObserver.setKeyListener(lowE);
+        KeyObserver.setKeyListener(lowF);
+        KeyObserver.setKeyListener(lowG);
+        KeyObserver.setKeyListener(lowA);
+        KeyObserver.setKeyListener(lowB);
+
         return frontEnd;
     }
 
-
-    // Key listener methods to listen for key pressed
-    public static class KListenLow implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if (e.getActionCommand().equals("C")) {
-                System.out.println("Low C");
-            } else if (e.getActionCommand().equals("C#")) {
-                System.out.println("lowCSharp");
-            } else if (e.getActionCommand().equals("D")) {
-                System.out.println("lowD");
-            } else if (e.getActionCommand().equals("D#")) {
-                System.out.println("lowDSharp");
-            } else if (e.getActionCommand().equals("E")) {
-                System.out.println("lowE");
-            } else if (e.getActionCommand().equals("F")) {
-                System.out.println("lowF");
-            } else if (e.getActionCommand().equals("F#")) {
-                System.out.println("lowFSharp");
-            } else if (e.getActionCommand().equals("G")) {
-                System.out.println("lowG");
-            } else if (e.getActionCommand().equals("G#")) {
-                System.out.println("lowGSharp");
-            } else if (e.getActionCommand().equals("A")) {
-                System.out.println("lowA");
-            } else if (e.getActionCommand().equals("A#")) {
-                System.out.println("lowASharp");
-            } else if (e.getActionCommand().equals("B")) {
-                System.out.println("lowB");
-            }
-        }
-    }
-
-    public static class KListenHigh implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if (e.getActionCommand().equals("C")) {
-                System.out.println("high C");
-            } else if (e.getActionCommand().equals("C#")) {
-                System.out.println("highCSharp");
-            } else if (e.getActionCommand().equals("D")) {
-                System.out.println("highD");
-            } else if (e.getActionCommand().equals("D#")) {
-                System.out.println("highDSharp");
-            } else if (e.getActionCommand().equals("E")) {
-                System.out.println("highE");
-            } else if (e.getActionCommand().equals("F")) {
-                System.out.println("highF");
-            } else if (e.getActionCommand().equals("F#")) {
-                System.out.println("highFSharp");
-            } else if (e.getActionCommand().equals("G")) {
-                System.out.println("highG");
-            } else if (e.getActionCommand().equals("G#")) {
-                System.out.println("highGSharp");
-            } else if (e.getActionCommand().equals("A")) {
-                System.out.println("highA");
-            } else if (e.getActionCommand().equals("A#")) {
-                System.out.println("highASharp");
-            } else if (e.getActionCommand().equals("B")) {
-                System.out.println("highB");
-            }
-        }
-    }
 }
