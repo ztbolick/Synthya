@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <Pane layoutX="14.0" layoutY="245.0" prefHeight="141.0" prefWidth="674.0">
+         <children>
+            <Button fx:id="lowC" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowB" layoutX="288.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowD" layoutX="48.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowE" layoutX="96.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowF" layoutX="144.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowG" layoutX="192.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowA" layoutX="240.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button layoutX="336.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button layoutX="384.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button layoutX="432.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button layoutX="480.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button layoutX="528.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button layoutX="576.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button layoutX="624.0" mnemonicParsing="false" prefHeight="141.0" prefWidth="48.0" />
+            <Button id="sharp" layoutX="417.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="81.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="273.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="177.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="225.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="33.0" mnemonicParsing="false" onKeyPressed="#playSound" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="369.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="513.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="561.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+            <Button id="sharp" layoutX="609.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="30.0" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
