@@ -60,6 +60,7 @@ public class Controller extends Main{
                            s11,s12,s13,s14,s15,s16,s17, s18,s19,s20,
                            s21,s22,s23,s24,s25,s26,s27,s28,s29,s30,
                            s31,s32, s33,s34,s35,s36,s37,s38,s39,s40,s41,s42};
+    AudioClip[] sine,square,saw;
 
 
 
@@ -80,12 +81,60 @@ public class Controller extends Main{
 
     public void keyPlayed(ActionEvent ae)
     {
-        if (ae.getSource() == lowC) s1.play();
-        else if (ae.getSource() == lowD) s3.play();
-        else if (ae.getSource() == lowE) s5.play();
-        else if (ae.getSource() == lowF) s7.play();
-        else if (ae.getSource() == lowG) s9.play();
-        else if (ae.getSource() == lowA) s11.play();
-        else if (ae.getSource() == lowB) s12.play();
+        String keyValue;
+        AudioClip[] waveForm;
+        int octive = 0;
+
+        if(1 == 1) waveForm = marimba;
+        else if(1 == 2) waveForm = sine;
+        else if(1 == 3) waveForm = square;
+        else if(1 == 4) waveForm = saw;
+
+        
+        if (ae.getSource() == lowC) {
+            keyValue = lowC.getAccessibleText();
+            waveForm[Integer.parseInt(keyValue) + octive].play();
+        } else if (ae.getSource() == lowD) {
+            keyValue = lowD.getAccessibleText();
+            waveForm[Integer.parseInt(keyValue)].play();
+        } else if (ae.getSource() == lowE) {
+            keyValue = lowE.getAccessibleText();
+            waveForm[Integer.parseInt(keyValue)].play();
+        } else if (ae.getSource() == lowF) {
+            keyValue = lowF.getAccessibleText();
+            waveForm[Integer.parseInt(keyValue)].play();
+        } else if (ae.getSource() == lowG) {
+            keyValue = lowG.getAccessibleText();
+            waveForm[Integer.parseInt(keyValue)].play();
+        } else if (ae.getSource() == lowA)  {
+            keyValue = lowA.getAccessibleText();
+            waveForm[Integer.parseInt(keyValue)].play();
+        } else if (ae.getSource() == lowB)  {
+            keyValue = lowB.getAccessibleText();
+            waveForm[Integer.parseInt(keyValue)].play();
+        }
+
+//        else if (ae.getSource() == lowCSharp) {
+//            keyValue = lowC.getAccessibleText();
+//            marimba[Integer.parseInt(keyValue)].play();
+//        } else if (ae.getSource() == lowDSharp) {
+//            keyValue = lowD.getAccessibleText();
+//            marimba[Integer.parseInt(keyValue)].play();
+//        } else if (ae.getSource() == lowESharp) {
+//            keyValue = lowE.getAccessibleText();
+//            marimba[Integer.parseInt(keyValue)].play();
+//        } else if (ae.getSource() == lowFSharp) {
+//            keyValue = lowF.getAccessibleText();
+//            marimba[Integer.parseInt(keyValue)].play();
+//        } else if (ae.getSource() == lowGSharp) {
+//            keyValue = lowG.getAccessibleText();
+//            marimba[Integer.parseInt(keyValue)].play();
+//        } else if (ae.getSource() == lowASharp)  {
+//            keyValue = lowA.getAccessibleText();
+//            marimba[Integer.parseInt(keyValue)].play();
+//        } else if (ae.getSource() == lowBSharp)  {
+//            keyValue = lowB.getAccessibleText();
+//            marimba[Integer.parseInt(keyValue)].play();
+//        }
     }
 }
