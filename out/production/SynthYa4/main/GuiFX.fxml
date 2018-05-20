@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <Pane layoutX="14.0" layoutY="245.0" prefHeight="141.0" prefWidth="674.0">
+         <children>
+            <Button fx:id="lowC" accessibleText="1" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowB" accessibleText="12" layoutX="288.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowD" accessibleText="3" layoutX="48.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowE" accessibleText="5" layoutX="96.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowF" accessibleText="6" layoutX="144.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowG" accessibleText="8" layoutX="192.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="lowA" accessibleText="10" layoutX="240.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="highC" accessibleText="13" layoutX="336.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="highD" accessibleText="15" layoutX="384.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="highE" accessibleText="17" layoutX="432.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="highF" accessibleText="18" layoutX="480.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="highG" accessibleText="20" layoutX="528.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="highA" accessibleText="22" layoutX="576.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+            <Button fx:id="highB" accessibleText="24" layoutX="624.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="141.0" prefWidth="48.0" />
+
+            <Button id="lowCSharp" fx:id="lowCSharp" accessibleText="2" layoutX="33.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="lowDSharp" fx:id="lowDSharp" accessibleText="4" layoutX="81.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="lowFSharp" fx:id="lowFSharp" accessibleText="7" layoutX="177.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="lowGSharp" fx:id="lowGSharp" accessibleText="9" layoutX="225.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="lowASharp" fx:id="lowASharp" accessibleText="11" layoutX="273.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="highCSharp" fx:id="highCSharp" accessibleText="14" layoutX="369.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="highDSharp" fx:id="highDSharp" accessibleText="16" layoutX="417.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="highFSharp" fx:id="highFSharp" accessibleText="19" layoutX="513.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="highGSharp" fx:id="highGSharp" accessibleText="21" layoutX="561.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+            <Button id="highASharp" fx:id="highASharp" accessibleText="23" layoutX="609.0" mnemonicParsing="false" onAction="#keyPlayed" prefHeight="89.0" prefWidth="30.0" styleClass="sharp" />
+         </children>
+      </Pane>
+      <Pane layoutX="352.0" layoutY="18.0" prefHeight="212.0" prefWidth="336.0">
+         <children>
+            <Slider layoutX="14.0" layoutY="14.0" prefHeight="89.0" prefWidth="313.0" />
+            <Slider layoutX="14.0" layoutY="109.0" prefHeight="89.0" prefWidth="313.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="18.0" prefHeight="212.0" prefWidth="185.0">
+         <children>
+            <RadioButton id="MarimBASS" fx:id="MarimBASS" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setWaveFormSelection" prefHeight="50.0" prefWidth="99.0" selected="true" styleClass="waveChooser" text="MarimBASS">
+               <toggleGroup>
+                  <ToggleGroup fx:id="waveFormSelectionGroup" />
+               </toggleGroup></RadioButton>
+            <RadioButton id="TrevBASS" fx:id="TrevBASS" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#setWaveFormSelection" prefHeight="50.0" prefWidth="99.0" styleClass="waveChooser" text="TrevBASS" toggleGroup="$waveFormSelectionGroup" />
+            <RadioButton id="RaveBASS" fx:id="RaveBASS" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#setWaveFormSelection" prefHeight="50.0" prefWidth="99.0" styleClass="waveChooser" text="RaveBASS" toggleGroup="$waveFormSelectionGroup" />
+         </children>
+      </Pane>
+      <Pane layoutX="195.0" layoutY="18.0" prefHeight="212.0" prefWidth="156.0">
+         <children>
+            <Button fx:id="octaveUp" layoutX="19.0" layoutY="28.0" mnemonicParsing="false" onAction="#setOctave" prefHeight="50.0" prefWidth="126.0" text="UP" />
+            <Button id="octaveDown" fx:id="octaveDown" layoutX="19.0" layoutY="148.0" mnemonicParsing="false" onAction="#setOctave" prefHeight="50.0" prefWidth="126.0" text="DWN" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="58.0" layoutX="19.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="126.0" />
+            <Label fx:id="octaveText" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="24.0" layoutY="87.0" prefHeight="44.0" prefWidth="113.0" text="00" textAlignment="CENTER" textFill="RED" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
